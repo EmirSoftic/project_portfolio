@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styleblog.css" />
+    <title>BlogES</title>
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <!--ikonica u tabu-->
+    <link rel="icon" href="./blogphoto/browserimg - Copy.png" />
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!--Dio kopiran sa https://www.w3schools.com/bootstrap4/bootstrap_get_started.asp -->
+
+    <!--Dio prekopiran sa https://www.w3schools.com/bootstrap/bootstrap_ref_comp_glyphs.asp?fbclid=IwAR2zUl0ClkGX0PPUV_ib9TyOIHfWFUBJmaNPndn3HTmfb4ZoZGIRohevljQ :: Sluzi mi da ubacim search qlyph-->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"
+    />
+  </head>
+
+  <body>
+    <!--Navigacijski meni -->
+    <header class="header">
+      <div class="row">
+        <div class="col-lg-2 d-none d-lg-block" id="slika_koja_nestanje">
+          <!--Moja slika sa transparentnom pozadinom-->
+          <a href="../MainStranica/index.html"
+            ><img
+              src="./blogphoto/header_slika.jpg"
+              alt="Mala_slika"
+              width="15%"
+              style="padding-bottom: 10px"
+          /></a>
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-6 nb">
+          <a href="../MainStranica/index.html" class="lin">Početna</a>
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-6 nb">
+          <a href="../BlogStranica/blog.html" class="lin">Blog</a>
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-6 nb">
+          <a href="../Galerija1/galerija1.html" class="lin">Galerija1</a>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-6 nb">
+          <a href="../Galerija2/Galerija2.html" class="lin">Galerija2</a>
+        </div>
+        <!--glyphicon-->
+        <!--Search polje koje nije funkcionalno-->
+        <div class="col-lg-2 d-none d-lg-block">
+          <button type="button" class="btn btn-default">
+      <span class="glyphicon glyphicon-search"></span> Search
+    </button>
+        </div>
+      </div>
+    </header>
+
+    <!--Blog stranica koja ima 3 clanka iz it sektora-->
+    <main>
+<!--Article komponente-->
+    <article class="clanak">
+      <div class="row">
+        <!--Vertikalni meni za navigaciju sadrzaja-->
+        <div class="col-lg-2 col-md-5 col-sm-12 meni">
+          <h1>MENI</h1>
+          <a href="#1">Ronilački kompjuter</a>
+          <br />
+          <a href="#2">Smart-watch</a>
+          <br />
+          <a href="#3">HTML5 i CSS3</a>
+          <br />
+          <a href="#forma_naslov">Forma</a>
+        </div>
+        <div class="col-lg-7 col-md-5 col-sm-12">
+          <h1>O blogu</h1>
+          <p>
+            Dobrodošli na blog stranicu mog portfolija. Obzirom da sam student
+            kompjuterskih nauka, prilično me interesuju različiti elektronski
+            uređaji koji koriste različite načine implementacije interfejsa,
+            funkcija i tome slično. Obzirom da ne bih želio da ovo bude neki
+            tipični blog odlučio sam se pozabaviti sa dva uređaja koja su meni
+            korisna, a mnogo ljudi ne zna za njih, ili ih ne koriste. Također,
+            uključio sam i malo historije HTML-a i CSS-a obzirom da su oni
+            korišteni za pravljenje ove stranice. Također, na dnu stranice imate
+            formu za prijavu ukoliko želite redovno čitati blog i biti uvijek
+            obavješteni o novim temama.
+          </p>
+        </div>
+        <div class="col-lg-2 d-none d-lg-block" id="slikazablog">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQerwk5Yl3vnmlr8yx7jANUyGRSlTMjh1T8aZPrLa3Gf9abFON88veaIK95_9Nv0NNx4RQ&usqp=CAU"
+            alt="Slika koja simbolizira blog"
+            height="80%"
+          />
+        </div>
+      </div>
+    </article>
+    <hr class="linija" />
+    <article class="clanak">
+      <div class="row">
+        <div class="col-lg-8 col-md-6 col-sm-12">
+          <!--prvi clanak iz it sektora-->
+          <!--naslov-->
+          <h1 id="1">Ronilački kompjuter</h1>
+          <!--kratak sadrzaj kojim sam smatrao korisnijim ako je na pocetku teme-->
+          <p>
+            <h4><b>Kratak sadržaj</b></h4>
+            <p>Ronilački kompjuter je dio lične opreme svakog ozbiljnijeg ronioca. Jako je bitan za sigurnost svakog ronioca kada pričamo <a href="#generalno">
+              <!--Unutrasnji link-->
+              generalno</a> o ronjenju. Ima posebne načine funkcionisanja što mu omogućavaju različite
+               <!--Unutrasnji link-->
+              <a href="#komp">komponente</a> od kojih je napravljen, te koje mu pomažu da izdrži velike pritiske a idalje radi onako kako treba.
+               <!--Unutrasnji link-->
+              <a href="#rad">Način rada</a> kompjutera nije suštinski važan za osobu koja se ne bavi ronjenjem, čak ni za ronioca, ali nije loše proširiti svoja znanja van onog što je neophodno za svaki dan. Suština čitavog uređaja svodi se na 
+               <!--Unutrasnji link-->
+              <a href="#alg">algoritam</a> kojim se izračunavaju stvari koje su od životnog značaja prilikom dubljih zarona. Kasnije ćemo spomenuti i neke od 
+               <!--Unutrasnji link-->
+              <a href="#kompovi">najboljih kompjutera</a> koji su izašli 2022. godine, kao i vidjeti 
+               <!--Unutrasnji link-->
+              <a href="#vs">poređenje</a> dva kompjutera koja ja koristim, ili sam koristio.</p>
+             <!--Unutrasnji link-->
+            <h4 id="generalno"> <b>Uopćeno o temi</b></h4>
+            Glavna svrha ronilačkog kompjutera jeste sprječavanje nastanka
+            potencialno smrtne
+            <!--vanjski link-->
+            <a href="https://www.enciklopedija.hr/natuknica.aspx?ID=14303"
+              >dekompresione bolesti</a
+            >, dajući informacije bitne roniocima u tok trenutnog i prethodnih
+            ronjenja. Ovi uređaju konstantno vrše proračune parcijalnih
+            pritisaka gasova koji se dišu, dubine i vremena samog zarona.
+            Obzirom da ronilački kompjuteri sve to prate, u stanju su upozoriti
+            prebrz izron, obavjestiti o dekompresionom zastanku na određenojn
+            dubini, te su ronioci došli u fazu da sa sobom ne moraju nositi
+            dekompresione tablice, dubinomjer i sat. Ovi uređaju su toliko
+            korisni da zbog praćenja svih navedenih parametara, uz mnogo drugih
+            kao što su vrste gasova, temperatura vode, temperatura zraka i tome
+            slično, da mogu značajno poslužiti doktorima u slučaju da se desi
+            neka nezgoda. Ovi uređaju koriste se kod rekreativnih zarona, ali su
+            toliko pouzdani da se koriste i kod tehničkih zarona, zarona za rad
+            pod vodom, kao i kod vojnih ronjenja. <br />
+            <!--podnaslovi-->
+             <!--Unutrasnji link-->
+            <h4 id="komp"><b>Komponente</b></h4>
+            Komponente od kojih je sačinjen uređaj su senzori pritiska,
+            komponenta koja prevodi električni signal iz senzora pritiska u
+            binarni signal kojeg kompjuter može obraditi. Dugmići, koji su
+            jedini način komunikacije ronioca sa računarom, senzori temperature,
+            baterija, ROM, RAM... Važno je spomenuti mikroprocesor. To je
+            komponenta koja sve signale koje primi u realnom vremenu preračunava
+            dajući kao izlaz podatke o načinu sprovođenja ostatka zarona, koliko
+            vremena smijemo biti na nekoj dubini, koliko vremena moramo ostati
+            na nekoj plićoj dubini i tome slično. <br />
+            <!--podnaslovi-->
+             <!--Unutrasnji link-->
+            <h4 id="rad"><b>Način rada</b></h4>
+            Ronilački kompjuteri su otporni na pritisak i vodu. Sve
+            komponente koje se bave prikupljanjem podataka rade to kako bi se
+            mogla voditi evidencija o nivou "otopljenih" gasova u tkivu svakog
+            ronioca. Svi kompjuteri suštinski prate iste parametre, stim da
+            moderniji u obzir uzimaju i neke dodatne faktore zbog sigurnosnih
+            faktora. Glavna stvar su pritisak i vrijeme obzirom da su oni glavni
+            za dekompresioni algoritam, koji u suštini određuje koliko
+            parcijalnog pritiska svakog gasa se nalazi u tkivima ronioca pri
+            povećanom vanjskom pritisku, obzirom da na svakih 10 metara dubine
+            iznosi 1bar pritiska. Većina zarona, čak i za same početnike se
+            odvijaju na oko 20 metara dubine, što je već 3 bara pritiska, a na
+            površini je to 1 bar. Algoritam preračunava kada direktni izron više
+            nije moguć, te se na displeju počinju prikazivati dekompresioni
+            zastanci. To su ustvari vremenski intervali koje moramo provesti na
+            označenoj dubini radi naše sigurnosti. Također, svi kompjuteri imaju
+            ugrađeni "No-fly" režim koji predstavlja vrijeme koje je zabranjeno
+            koristiti avion. Za to postoji vrlo jasno objašnjenje, a to je da
+            prilikom polijetanja aviona naše tijelo misli da još više izranja
+            velikom brzinom, jer se smanjuje pritisak okoline. Većina kompjutera
+            dozvoljava male izmejene po pitanju maksimalnog dopuštenog rizika u
+            svom radu, pa sam tako ja neke stvari na svom podesio da bih mogao
+            duže ostajati na velikim dubinama obzirom da sam poprilično mlad,
+            dok sam starijim kolegama pooštrio te kriterije radi sigurnosti.
+            <br />
+            <!--podnaslovi-->
+             <!--Unutrasnji link-->
+            <h4 id="alg"> <b>Algoritmi</b></h4>
+            Algoritmi koji se koriste za svaki ronilački sat mogu
+            varirati u zavisnosti od vremena proizvodnje, kao i o proizvođaču
+            koji pravi kompjuter. Po samim imenima algoritama ne može se
+            naslutiti kako oni rade, međutim, to je jako bitan faktor pri
+            kupovini ronulačkog sata jer je to poprilično skup dio ronilačke
+            opreme. Nepisano pravilo je da je najstrožiji kompjuter najbolji,
+            jer se uvijek čitava grupa sačeka ukoliko se radi o dekompresionim
+            zastancima, te je moguće da jedan kompjuter govori za da 3 metra
+            treba ostati 5 minuta, dok drugi govori 12. Sluša se onaj strožiji!
+            U praksi se koristi direktno ili u jednoj od izvedenih oblika
+            Buhmanov dekompresioni algoritam, koji predstavlja matematički model
+            načina ulaska i izlaska gasova u i iz ljudskog tijela pri promjeni
+            okolnih pritisaka. Do njeg se došlo istraživanjima u Cirihu 1980-thi
+            godina. Buhman je pratio vrijeme poluraspada azota i helija u
+            tkivima ljudi jer su oni najodgovorniji za nastanak problema. Ideja
+            je predstaviti ljudsko tijelo kao skupina više tkiva, sva sa
+            različitim vremenom poluraspada gasova, kako bi se izračunao
+            pritisak gasa u svakom od tih tkiva koristeći ovu
+            <a href="/BlogStranica/blogphoto/formula_za_P.png"> formulu</a>,
+            gdje je P<sub>0</sub> inicijalni pritisak, P<sub>gas</sub>
+            parcijalni pritisak gasa koji se diše, t<sub>exp</sub> vrijeme
+            potrebno da gas napusti tkivo kao i poluvrijeme raspada
+            t<sub>1/2</sub>. Kada se pritisak gasa smanji, tkiva počinju
+            otpuštati gas. Da bi se izračunao najmanji podnošljivi pritisak na
+            kojem tijelo počinje tpuštati gasove koje je nakupilo na dubinama,
+            koristimo ove
+            <a href="/BlogStranica/blogphoto/ostale_formule.png">formule</a>,
+            gdje je P<sub>tol</sub> upravo taj najmanji podnošljivi pritisak.
+            Ovo se isprogramira uvođenjem ovih formula te imputima koji dolaze
+            iz realnog vremena, te se čuvaju osnovni podaci prethodnih zarona u
+            ROM memoriji. <br>
+            <!--podnaslov-->
+             <!--Unutrasnji link-->
+            <h4  id="kompovi"> <b>Najbolji uređaji</b></h4>
+            Na terenu najbolje pokazani kompjuteri 2022. godine su:
+            <!--lista za blog-->
+            <ul>
+              <li>Mares Sive Computer Smart</li>
+              <li>Suunto D4i Novo</li>
+              <li>Garmin Descent Mk1</li>
+              <li>Shearwater Teric Dive</li>
+              <li>Garmin Descent Mk2i</li>
+            </ul>
+            <br>
+          </p>
+          <h4 id="vs"> <b>Cressi Leonardo vs Seac Screen</b></h4>
+          <!--tabela-->
+          <div class="table-responsive">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Naziv uređaja</th>
+                    <th scope="col">Preglednost</th>
+                    <th scope="col">Cijena</th>
+                    <th scope="col">Remen</th>
+                    <th scope="col">Glasnoća</th>
+                    <th scope="col">Pouzdanost</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Cressi Leonardo</td>
+                    <td>9/10</td>
+                    <td>9/10</td>
+                    <td>3/10</td>
+                    <td>3/10</td>
+                    <td>8/10</td>
+                  </tr>
+                  <tr>
+                    <td>Seac Screen</td>
+                    <td>10/10</td>
+                    <td>7/10</td>
+                    <td>8/10</td>
+                    <td>9/10</td>
+                    <td>9/10</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          <p>
+            Ukoliko se želite vratiti na početak stranice pritisnite
+            <a href="#top">ovdje</a>
+          </p>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 slika">
+          <!--slika za blog stranicu-->
+          <img class="image"
+            src="./blogphoto/Ronilacki_kompjuter.jpg"
+            alt="slika ronilačkog kompjutera"
+            width="100%"
+          />
+          <!--video za blog stranicu-->
+          <div style="padding: 20px;">
+          <iframe width="100%" height="20%"
+          src="https://www.youtube.com/embed/cUaGi7weUW8?controls=0">
+          </iframe>
+          </div>
+          <!--slika za blog stranicu-->
+          <img class="image" src="./blogphoto/kompjuter_u_radu.jpg" alt="ronilački kompjuter pod vodom" width="100%">
+        </div>
+      </div>
+    </article>
+
+    <hr class="linija" />
+<!--Article komponente-->
+    <article class="clanak">
+      <div class="row">
+        <div class="col-lg-8 col-md-6 col-sm-12">
+          <!--Drugi clanak-->
+          <!--Naslov-->
+          <h1 id="2">Smart-watch(VO2Max)</h1>
+          <p>
+            <!--podnaslov  i kratki sadrzaj-->
+            <h4><b>Kratak sadržaj</b></h4>
+            <p>Smart-watch ili pametni sat je jako koristan uređaj ako njime znamo upravljati i čitati podatke sa njega. Razlog što je sve zastupljeniji je taj što je poprilično lagano shvatiti <a href="#gen">osnovnu sliku</a> rada. Kroz razne <a href="kop">komponente</a>, sat ima mnoštvo mogućnosti praćenja raznih parametara našeg tijela, dajući nam informaciju kada smo pod stresom, povećanim pritiskom... Te sve komponente naročito su bitne prilikom praćenja <a href="ra">VO2Max-a</a>. Da bi računanja svih ovih informacija bila relevantna i mjerodavna, koriste se razni unaprijed definisati <a href="algo">algoritmi</a>. Svaki proizvođač te algoritme nastoji prilagoditi na svoj način, a neke od najboljih modela pametnih satova 2022 godine možete pogledati <a href="#satovi">ovdje</a> </p>
+            <h4 id="gen"> <b>Uopćeno o temi</b></h4>
+            Pametni satovi sve češći su odabir pojedinca pri kupovini satova. Razlog je njihova funkcionalnost. Bilo da se radi o osobi koja je sportskog tipa ili ne, pametni satovi pored standardnih funkcija sata nude i umrežavanje sa telefonom što je jako korisno u većini slučajeva. To nam omogućava pisanje kratkih poruka, odgovaranje na pozive, postavljanje alarma, a sve doslovno na dohvat ruke. Kako su satovi sve moderniji, a komponente sve manje i boljih performansi, moguće je u jako mali sat spremiti razne senzore koji će pratiti funkcionisanje našeg tijela sa zdravstvene strane. Primjeri su broj koraka, nivo stresa kroz koje naše tijelo prolazi, broj otkucaja srca, i mnoge druge. Sve ovo osobi daje podatke koji se mogu i trebaju pratiti ukoliko želimo voditi računa o našem zdravlju.<br />
+            <h4 id="kop"><b>Komponente</b></h4>
+            Komponente od kojih je sačinjen gotovo svaki pametni sat su pravljene od dosta čvrstih materijala, koji su dosta lagani. Razlog je taj što su uglavnom namjenjeni sportistima, iako ne samo njima. Glavne dvije komponente, bez kojih sat ne bi bio sat jesu remen i neki vid ekrana. Pametni satovi su moderniji nego obični satovi te se ovdje radi o digitalnim ekranima, stim da neki podržavaju osjetljivost na dodir, dok drugima upravljamo koristeći specijalne dugmiće. Također, obzirom da je satom moguće upravljati, on u sebi ima ugrađen procesor koji mu omogućava funkcionisanje, izračunavanje, praćenje podataka... Pored toga, sat ima memoriju u kojoj skladišti sve te podatke koje dobiva od strane senzora. Senzora zaista ima raznih i sve zavisi od modela do modela. Uz to, svaki sat funkcioniše na nekom unaprijed određenom operativnom sistemu. Da bi funkcionisao dugo vremena, potrebna je baterija, koju svaki sat ima, pa samim time i svaki pametni sat.<br />
+            <h4 id="ra"><b>Način rada</b></h4>
+            U ovom dijelu ćemo se detaljnije pozabaviti osnovama računanja konkretno VO2max informacije na satu. Prvo, šta je uopće to? Ta informacija predstavlja maksimalnu zapreminu kisika koje naše tijelo može primiti svake minute po kilogramu težine, te dobijeni kisik pretvoriti u energiju koja nam je potrebna prilikom fizičkih napora. Ovaj "rezultat" se mijenja našim načinom života i načinom treninga. Velika je dilema da li je ovo pravi način mjerenja, da li je korektan i slično, međutim u praksi su se podaci koje nam dostavlja sat pokazali jako precizni što se tiče konkretno VO2max. Naravno, ljudi kojima život ovisi o ovome, primarno profesionalni biciklisti ili trkači, testove rade u posebnim labaratorijama, trenirajući na sobnom biciklu ili traci, u kojima nose maske. Tim maskama se mjeri količina kisika koju udišemo i izdišemo, te pored toga, svako malo daju mali uzorak krvi na analizu. Ovo sve rade kako bi znali tačno u kojem trenutku mogu raditi koliko jako svoj zadati trening. Običnom čovjeku je to pretjerivanje, i suštinski nebitno za život.  To nikako nije poželjno ili zanimljivo iskustvo. Upravo iz tog razloga se i koriste satovi za okvirnu informaciju. Već smo rekli koje su osnovne komponente sata te je među njima naveden i senzor. Senzora ima raznih, međutim za VO2max je jako bitan senzor otkucaja srca jer on daje jako bitne informacije o načinu našeg treniranja. Uz to, pri podešavanju svakog sata daju se osnovne informacije o stanju tijela, koje se kasnije mogu promijeniti, ali se daju sa namjerom da sve to ulazi u kalkulacije koje služe za daljnja računanja.
+            <br />
+            <!--podnaslov-->
+            <h4 id="algo"> <b>Algoritmi</b></h4>
+            Ključna stvar pri pravljenju algoritama su spol, godine te kilaža. Ovo su podaci koje korisnik unosi sam te su zato poprilično nesigurne samom uređaju. Međutim podaci o brzini izvođenja neke aktivnosti, na primjer vožnji bicikla ili trčanju, kao i otkucaje srca, su dobijeni od uređaja direktno te ih uređaj koji vrši daljnja računanja uzima kao tačne. Formule za računanje VO2max su poprilično jednostavne ukoliko imamo precizne senzore. Glavna formula jeste da je VO2max jednak količini zraka koju unosimo u jednom minuti pomnoženo sa postotkom kisika. Ovaj proizvod se podjeli sa proizvodom izdahnutog zraka po minuti i izdahnutog kisika. Obzirom da su ovo poprilično teške stvari za pratiti, te jako mali broj satova ima senzore količine udahnutog zraka, obzirom da za to treba posebni remen, računanje se svodi na jednu od dvije preostale opcije. <a href="/BlogStranica/blogphoto/formulajedan.png">Prva formula</a> jeste jednostavnija za shvatiti, međutim, pitanje je zbog čega baš 15,3. Jednostavno, nakon mnogo istraživanja u labaratoriju naučnici su došli do otkrića da je to magična konstanta koja daje tačan rezultat za većinu ljudi. <a href="/BlogStranica/blogphoto/formuladva.png">Druga</a>, ne toliko popularna formula uzima dosta faktora u obzir i malo je preciznija, međutim, sve manje kompanija koristi ovu formulu za računanje jer ovisi i o podacima koje sam korisnik unosi, a korisnik obično daje ne toliko korektne ili ispravne podatke, najčešće iz čistog neznanja.<br>
+            <!--podnaslov-->
+            <h4  id="satovi"> <b>Najbolji pametni satovi</b></h4>
+            Najhvaljeniji pametni satovi 2022. godine su:
+            <!--lista-->
+            <ul>
+              <li>Garmin Forerunner</li>
+              <li>Garmin Instinct</li>
+              <li>Coros Pace 2</li>
+              <li>Samsung Galaxy Watch 4</li>
+              <li>Apple Watch Series 7</li>
+              <li>Fossil Sport Smartwatch</li>
+              <li>Huawei Watch GT</li>
+            </ul>
+            <br>
+          </p>
+          <p>
+            Ukoliko se želite vratiti na početak stranice pritisnite
+            <a href="#top">ovdje</a>
+          </p>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 slika">
+          <!--slika-->
+          <img class="image"
+            src="./blogphoto/Smart_watch.jpg"
+            alt="slika Garmin sata"
+            width="100%"
+          />
+          <!--slika-->
+          <img class="image" src="./blogphoto/sat.jpg" alt="slika Apple Watch Series 7" width="100%">
+          <div style="padding: 20px;">
+            <!--video-->
+          <iframe width="100%" height="300px"
+          src="https://www.youtube.com/embed/3620mR7nZL8?controls=0">
+          </iframe>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <hr class="linija" />
+<!--Article komponente-->
+    <article class="clanak">
+      <div class="row">
+        <div class="col-lg-8 col-md-6 col-sm-12">
+          <!--treci clanak-->
+          <!--naslov-->
+          <h1 id="3">HTML5 i CSS3</h1>
+          <p>
+            Na predmetu web programiranje u prvih sedam sedmica prešli smo osnovna znanja vezana za uređivanje stranica. HTML nam služi kako ispisali tekst na stranicu, odredili naslove, paragrafe, slike, i tome slično. CSS ima drugu ulogu. Naime, on je zadužen za uređivanje svega što HTML definiše. Prije su HTML i CSS bili mnogo slabiji, pa tako je mnogo stvari koje trenutno možemo definisati konkretno CSS-om prije bilo nemoguće. Za te naprednije stvari koristio se JavaScript, koji ćemo izučavati u drugom dijelu predmeta. Ovo je doista obimno i teško je sve stvari koje se mogu definisati kao i načine njihovog uređenja zapamtiti napamet. Sva sreća je što postoje stranice kao <a href="https://www.w3schools.com/">w3schools</a> koje nam daju osnovme informacije o elementima, kao i kako ih uređivati. Uz HTML i CSS se može idalje jako malo, međutim, obzirom da je su oni osnova i podloga za sve ostalo jako je bitno znati osnove vezane uz njih. Također, moguće je koristiti gotove stranice uz pomoć različitih unaprijed definisanih stranica koji omogućavaju više "user-friendly" izgled stranice sa komponentama na koje su ljudi već navikli. Obzirom da je mnogo ljudi započinjalo s ovim tehnikama praviti web stranice, moguće je čak praviti stranice koje su responsive. To znači da stranice prilagođava svoj izgled u zavisnosti od veličine displeja na kojem se stranica prikazuje. To omogućavaju dva načina uređivanja. Prvi je bootstrap, u kojem je konkretno napravljena i ova web stranica. On pored responsive dizajna omogućava i mnoštvo dodatnih stvari kakav je i izgled same galerije2, pravljenje tabela, kakve su one na početnoj stranici, te mnogo toga. Drugi način je koristeći media-query. To je jako zgodna stvar obzirom da se njom definiše šta i kako će se prikazivati kada je ekran nekih dimenzija. Jedina bitna stvar je da, koju god tehniku da koristimo, poštujemo unaprijed definisanu sintaksu, odnosno način pisanja riječi, definisanje klasa kojima pripadaju i tome slično.
+          </p>
+          <p>
+            Ukoliko se želite vratiti na početak stranice pritisnite
+            <a href="#top">ovdje</a>
+          </p>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 slika">
+          <!--slike-->
+          <img
+            src="./blogphoto/htmlandcss.jpg"
+            alt="HTML5CSS3"
+            width="100%"
+          />
+        </div>
+      </div>
+    </article>
+    </main>
+
+    <hr class="linija" />
+    <div class="clanak">
+      <div class="row">
+        <!--Forma za kontakt nije funkcionalna-->
+        <div class="col-lg-12 col-md-12 col-sm-12">
+          <h1 id="forma_naslov">Prijavnica</h1>
+          <p id="forma_paragraf">
+            Ukoliko vas ovakav sadržaj zanima i željeli biste saznati više o
+            ovim temama, možete se prijaviti na ovaj blog i tako dobijati
+            obavještenja čim se izbaci novi članak, ili popuniti formu koja će
+            vam na e-mail slati obavjest da se novi članak pojavio na stranici.
+          </p>
+        </div>
+
+        <div class="col-lg-6 col-md-12 col-sm-12">
+          <div class="container1">
+            <h2>Unesite svoje podatke za subskripciju</h2>
+            <!--Jos jedna forma, mislim da se uklapa bolje sa jos jednom formom-->
+            <form action="">
+              <div class="row">
+                <div class="col-12 col-sm-6 zahtjev">
+                  <label for="Ime">Ime</label>
+                </div>
+                <div class="col-12 col-sm-6 unos">
+                  <input type="text" name="Ime" id="Ime" placeholder="Ime..." />
+                </div>
+                <div class="col-12 col-sm-6 zahtjev">
+                  <label for="Prezime">Prezime</label>
+                </div>
+                <div class="col-12 col-sm-6 unos">
+                  <input
+                    type="text"
+                    name="Prezime"
+                    id="Prezime"
+                    placeholder="Prezime..."
+                  />
+                </div>
+                <div class="col-12 col-sm-6 zahtjev">
+                  <label for="E-mail">E-mail</label>
+                </div>
+                <div class="col-12 col-sm-6 unos">
+                  <input
+                    type="text"
+                    name="E-mail"
+                    id="E-mail"
+                    placeholder="E-mail adresa..."
+                  />
+                </div>
+
+                <div class="col-12 col-sm-6 zahtjev">
+                  <label for="Drzava">Drzava</label>
+                </div>
+                <div class="col-12 col-sm-6 unos">
+                  <select name="Drzava" id="Drzava">
+                    <option value="BiH">Bosna i Hercegovina</option>
+                    <option value="Hrvatska">Hrvatska</option>
+                    <option value="Srbija">Srbija</option>
+                  </select>
+                </div>
+
+                <div class="col-12 col-sm-6 zahtjev">
+                  <label for="Password">Password</label>
+                </div>
+                <div class="col-12 col-sm-6 unos">
+                  <input type="password" name="Password" id="Password" />
+                </div>
+
+                <div class="col-12 col-sm-6 zahtjev">
+                  <label for="Password">Ponovite password</label>
+                </div>
+                <div class="col-12 col-sm-6 unos">
+                  <input type="password" name="Password" id="Password" />
+                </div>
+                <!--koristio sam button da se tranica ne refresha-->
+                <div class="col-12 col-sm-6">
+                  <input type="button" class="zahtjev" value="Predaj" />
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-md-12 col-sm-12">
+          <div class="container2">
+            <h2>Unesite svoje podatke za slanje poruke</h2>
+            <form action="">
+              <div class="row">
+                <div class="col-12 col-sm-6 zahtjev">
+                  <label for="Ime">Ime</label>
+                </div>
+                <div class="col-12 col-sm-6 unos">
+                  <input
+                    type="text"
+                    name="Ime"
+                    id="Ime"
+                    placeholder="Vaše ime..."
+                  />
+                </div>
+                <div class="col-12 col-sm-6 zahtjev">
+                  <label for="Prezime">Prezime</label>
+                </div>
+                <div class="col-12 col-sm-6 unos">
+                  <input
+                    type="text"
+                    name="Prezime"
+                    id="Prezime"
+                    placeholder="Vaše prezime..."
+                  />
+                </div>
+                <div class="col-12 col-sm-6 zahtjev">
+                  <label for="E-mail">E-mail</label>
+                </div>
+                <div class="col-12 col-sm-6 unos">
+                  <input
+                    type="text"
+                    name="E-mail"
+                    id="E-mail"
+                    placeholder="E-mail adresa..."
+                  />
+                </div>
+                <div class="col-12 col-sm-6 zahtjev">
+                  <label for="Naslov">Naslov poruke</label>
+                </div>
+                <div class="col-12 col-sm-6 unos">
+                  <input
+                    type="text"
+                    name="Naslov"
+                    id="Naslov"
+                    placeholder="Naslov poruke..."
+                  />
+                </div>
+                <div class="col-12 col-sm-6 zahtjev">
+                  <label for="Poruka">Poruka</label>
+                </div>
+                <div class="col-12 col-sm-6 unos" id="unos_poruke">
+                  <input
+                    type="text"
+                    name="Poruka"
+                    id="Poruka"
+                    placeholder="Poruka..."
+                  />
+                </div>
+                <!--koristio sam button da se tranica ne refresha-->
+                <div class="col-12 col-sm-6">
+                  <input type="button" class="zahtjev" value="Predaj" />
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="linija" />
+<!--Article komponente-->
+
+    <article class="clanak">
+      <div class="row">
+        <div class="col-12">
+          <form action="">
+            <!--Da se teks ne boldira, pronasao na https://stackoverflow.com/questions/20127591/how-to-remove-bold-from-f-label-->
+            <form-check-label for="gsearch"
+              >Ukoliko vas nešto što nije spomenuto u blogu zanima, pretragu te
+              teme možete izvršiti ovdje:</form-check-label
+            >
+            <!--ovdje se stranica refresha jer bi da radi prebacivalo korisnika u novi prozor-->
+            <input
+              type="search"
+              id="gsearch"
+              name="gsearch"
+              placeholder="Naziv teme"
+            />
+            <button type="submit">Pretraži</button>
+          </form>
+        </div>
+      </div>
+    </article>
+
+    <footer class="footer">
+      <div class="row">
+        <div class="col-12 col-sm-3">
+          <!--Footer povratka na pocetak stranice-->
+          <a href="#top">Povratak na početak stranice</a>
+        </div>
+        <div class="col-12 col-sm-3">
+          <!--Link na drustvenu mrezu-->
+          <a
+            href="https://www.instagram.com/emir.softic01/"
+            target="_blank"
+            class="lin"
+            >Instagram</a
+          >
+        </div>
+        <div class="col-12 col-sm-3">
+          <!--Link na drustvenu mrezu-->
+          <a
+            href="https://www.facebook.com/softa.01"
+            target="_blank"
+            class="lin"
+            >Facebook</a
+          >
+        </div>
+        <!--Datum izrade i copyright simbol-->
+        <div class="col-12 col-sm-3">
+          <p>Datum izrade:25.10.2022. &#169;</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styleprojekti.css" />
+    <title>Projekti</title>
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <!--ikonica u tabu pretrazivaca-->
+    <link rel="icon" href="./slikeprojekti/browserimg - Copy.png" />
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!--Dio kopiran sa https://www.w3schools.com/bootstrap4/bootstrap_get_started.asp -->
+
+    <!--Dio prekopiran sa https://www.w3schools.com/bootstrap/bootstrap_ref_comp_glyphs.asp?fbclid=IwAR2zUl0ClkGX0PPUV_ib9TyOIHfWFUBJmaNPndn3HTmfb4ZoZGIRohevljQ :: Sluzi mi da ubacim search qlyph-->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"
+    />
+  </head>
+  <!--Projekti, ima projekata i iz it svijeta a i onih koje nisu iz svijeta tehnologije-->
+  <body>
+    <!--Navigacijski meni -->
+    <header class="header">
+      <div class="row">
+        <div class="col-lg-2 d-none d-lg-block" id="slika_koja_nestanje">
+          <!--Moja slika sa transparentnom pozadinom-->
+          <a href="../MainStranica/index.html"
+            ><img
+              src="./slikeprojekti/header_slika.jpg"
+              alt="Mala_slika"
+              width="15%"
+              style="padding-bottom: 10px"
+          /></a>
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-6 nb">
+          <a href="../MainStranica/index.html" class="lin">Početna</a>
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-6 nb">
+          <a href="../BlogStranica/blog.html" class="lin">Blog</a>
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-6 nb">
+          <a href="../Galerija1/galerija1.html" class="lin">Galerija1</a>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-6 nb">
+          <a href="../Galerija2/Galerija2.html" class="lin">Galerija2</a>
+        </div>
+        <!--glyphicon-->
+        <!--Search polje koje nije funkcionalno-->
+        <div class="col-lg-2 d-none d-lg-block">
+          <button type="button" class="btn btn-default">
+            <span class="glyphicon glyphicon-search"></span> Search
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <h1>
+      Ovdje će biti projekti sa tabelama, slikama, videom, listom i još, sve
+      ubaciti pred PPPZ
+    </h1>
+
+    <article class="cjelina">
+      <div class="row">
+        <div class="cjelina">
+          <!--aside komponenta-->
+          <aside>
+          <h1 class="Naslov">Generalno o projektima</h1>
+          <p>
+            Što se tiče projekata pored već prikazanog projekta iz oblasti
+            kompjuterskih nauka prikazati ću vam još jedan koji sam radio iz
+            istog predmeta, strukture podataka i algoritmi. Osim ta dva, nisam
+            imao vremena da se posvetim mojim projektima na kojima bih radio
+            samostalno. Međutim, to se polahko mijenja, što dokazuje i
+            postojanje ove jednostavne web stranice koju trenutno čitate.
+            Međutim, kroz razne vannastavne aktivnosti u srednjoj školi zaista
+            sam sudjelovao u dosta projekata volonterskog tipa. Također, moja
+            škola, Treća gimnazija, imala je dosta zanimljivih skoro pa
+            obaveznih projekata u kojima su učestvovali svi učenici u razredu
+            koji su to mogli ili željeli, a nabrojati ću neke u nastavku teksta.
+          </p>
+</aside>
+        </div>
+      </div>
+    </article>
+    <hr class="linija" />
+
+    <!--Article komponente-->
+    <article class="cjelina">
+      <div class="row">
+        <div class="col-lg-6">
+          <h1 class="Naslov">Projekat_1: Lista imenik</h1>
+          <p>
+            Ovo je bio projekat namjenjen da dodatno razumijemo način
+            implementacije liste, obzirom da je to struktura podataka sa kojom
+            smo jako dugo radili. Projekat je imao 3 teme, svaka slične težine,
+            a asistent Admir Beširević je davao teme studentima slučajnim
+            odabirom. Ja sam dobio da radim neku vrstu telefonskog imenika.
+            Svaki imenik ima atribut naziv (npr. „PMF osoblje“ ili „Vladislav
+            Skarić roditelji“). Klasu implementirati kao dvostruko povezanu
+            listu, pri čemu čvorovi liste pored pokazivača sadrže i atribut tipa
+            Kontakt (struct), a to je struktura koja se sastoji od naziva
+            osobe/firme (tipa string), mobilni telefon (tipa string, u obliku
+            „062123456“) i fiksni telefon (također tipa string, u obliku
+            „033222555“). Moguće je da je u kontaktu upisan mobilni telefon, a
+            fiksni nije (tj. fiksni je prazan string), ili obrnuto, ali je
+            neophodno da je upisan bar jedan od njih, kao i naziv. Mobilni i
+            fiksni telefon mogu sadržavati samo cifre (u suprotnom se baca
+            izuzetak). Elemente imenika čuvati u sortiranom poretku po nazivu
+            osobe/firme. Pored osnovnih, tada već dobro poznatih funkcija koje
+            lista treba da ima, bilo je neophodno implementirati i sljedeće
+            funkcionalnosti:
+          </p>
+          <ul>
+            <li>
+              Funkciju za dodavanje novog kontakta, brisanje postojećeg,
+              promjenu naziva i promjenu broja telefona. Tu je bitna stvar bila
+              obratiti posebnu pažnju na to da imenik uvijek mora biti u
+              sortiranom redoslijedu, te da ne smije biti duplikata. Ukoliko bi
+              se dodao duplikat, bacao bi se izuzetak.
+            </li>
+            <li>
+              Pretragu po nazivu osobe ili firme, šta god da je spašeno u
+              imeniku. Ova funkcionalnost je trebala raditi i za nepotpuna
+              imena. Na primjer, za string "adm" funkcija treba vratiti
+              Administracija, Admir, Admira, pod uslovima da oni uopće i postoje
+              u kontaktima. Svi objekti trebaju biti sortirani po nazivu
+            </li>
+            <li>
+              Pretragu, ali po broju telefona ovaj put. Funkcija radi isto kao i
+              prethodna stim što umjesto imena ili slova, unosi se početak
+              broja, ili čitav broj.
+            </li>
+            <li>
+              Poseban tip konstruktora koji je primao vektor kontakata koji nisu
+              bili sortirani. Konstruktor je imao zadatak da se riješi duplikata
+              koji su eventualno bili proslijeđeni u nizu, te da pored toga
+              sortira elemente vektora. Tu je glavni problem bio napraviti
+              sortiranje kontakata, obzirom da se radilo u O(n*logn) vremenu,
+              gdje je n predstavljao broj proslijeđenih kontakata.
+            </li>
+            <li>
+              Funkciju za spajanje dva imenika u novi sortirani imenik. Funkcija
+              je trebala raditi u O(p+q) vremenu, pri čemu su p i q veličine
+              imenika. Ako se u imenicima nalaze dva konstakta sa istim
+              nazivima, bilo je potrebno uraditi jednu od sljedece 3 stvari:
+              <ol>
+                <li>
+                  Ako su oba kontakta potpuno identična, samo jedan od njih je
+                  trebao biti spašen u novom spojenom riječniku.
+                </li>
+                <li>
+                  Ukoliko se radi o identičnim nazivima, međutim brojevi su
+                  različiti, tada se u imenik dodaju oba kontakta. Da bi se
+                  dodala, na kraj njihovih naziva dodavao se string
+                  "-NAZIV_IMENIKA". Ista stvar je važila i za različite brojeve
+                  fiksnog telefona.
+                </li>
+                <li>
+                  Ukoliko su imena i broj mobilnog telefona isti, a u jednom
+                  kontaktu je spašen fiksni broj, a u drugom nije, u spojenom
+                  riječniku se je trebao nalaziti samo onaj kontakt koji ima
+                  spašen fiksni broj.
+                </li>
+              </ol>
+            </li>
+          </ul>
+          <p>
+            Sve u svemu ovo je bio meni jako zanimljiv projekat, a već sam rekao
+            da mi se je ovaj predmet mnogo svidio. Smatram da je glavni problem
+            u ovom projektu bio uraditi korektno sortiranje liste, kao i
+            napraviti fino definisane operacije nad listom koja čuva različite
+            tipove podataka i koje poredi. Nakon toga, uvodile su se funkcije
+            slične onima koje se sutandardne za listu i koje smo više-manje
+            prošli i sa asistentom, samo su sada bilo, logično, složenije. Mnogo
+            stvari koje su i dan danas potrebne sam poprilično shvatio radeći
+            ovaj projekat, obzirom da je to bio prvi projekat iz oblasti
+            kompjuterskih nauka koji sam ikada radio.
+          </p>
+        </div>
+        <div class="col-lg-6">
+          <img
+            src="../Projekti/slikeprojekti/h1.png"
+            alt="Slika header fajla 1"
+            width="100%"
+          />
+          <img
+            src="../Projekti/slikeprojekti/h2.png"
+            alt="Slika header fajla 2"
+            width="100%"
+          />
+        </div>
+      </div>
+    </article>
+    <hr class="linija" />
+    <!--Article komponente-->
+    <article class="cjelina">
+      <div class="row">
+        <div class="col-12">
+          <h1 class="Naslov">Projekat_2: Dan otvorenih vrata</h1>
+          <p>
+            Dan otvorenih vrata je projekat koji organizuje Treća gimnazija,
+            srednja škola u koju sam ja išao. Ideja je nastala iz tipičnog
+            obilaska osnovnoškolaca raznih srednjih škola kako bi svi vidjeli
+            koja škola šta nudi. Međutim, Treća gimnazija je odlučila napraviti
+            nešto malo drugačije. Dani otvorenih vrata su se organizovali svake
+            godine pred završetak devetog razreda osnovne škole. Cilj je bio na
+            unikatan način predstaviti školu i sve sadržaje koje nudi, a barem
+            dok sam ja išao u školu, zaista je bilo dosta interesantnog sadržaja
+            za sve učenike. Tu su učenici mogli gledati eksperimente fizike,
+            praktičnu nastavu matematike, projekte iz robotike i informatike, i
+            još mnogo tema vezanih za druge oblasti, bilo da se radi o jezičkim
+            predmetima, društvenim, ili prirodnim. Pored svih tih eksperimenata,
+            dosta karakteristična stvar jeste bila ta što se čitav dan u školi
+            odigravaju razne priredbe, mini koncerti, plesovi, te je uvijek bilo
+            nekih aktivnosti za sve članove obitelji, ne samo potencijalne
+            buduće učenike. U holovima škole, ili u dvorištu, ako bi to vrijeme
+            dopuštalo, svaki razred je imao svoj štand. Štandovi su služili za
+            izlaganje slanog i slatkog jela, sokova, ili nekog drugog sadržaja
+            koji je svaki razred dizajnirao na svoj način. Sve te "usluge" su se
+            morale platiti neku veoma malu cijenu, a zamisao je bila da se od
+            skupljenog novca plati ekskurzija i džeparac djeci koji se nalaze u
+            finansijsko teškoj situaciji. Ovo, ukoliko nema nikakvih
+            malverzacija sa novcem u šta vjerujem i nadam se da nema, je po meni
+            jedna divna ideja, pošto ekskurziju smatram jako lijepim dijelom
+            srednje škole, te bi bila prava šteta da je neko zbog manjka
+            novčanih sredstava propusti. Uz to, škola je imala dosta unikatan
+            način nagrađivanja učenika. To je bilo davanja slobodnog dana.
+            Dakle, dan kada se učenici najave da ne žele ići u školu, te tako to
+            i bude. Naravno, postoje ograničenja tipa ne može se uzeti slobodan
+            dan kada je najavljena neka pismena provjera znanja ili nešto tome
+            slično. Razred koji bi na danu otvorenih vrata skupio najviše novca,
+            dobio bi slobodan dan od škole. Obaveze za ovaj dan su se najčešće
+            dijelile po spolovima, te generalnu podjelu zaduženja možete
+            pogledati u tabeli.
+          </p>
+          <div class="table-responsive">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">Muškarci</th>
+                  <th scope="col">Žene</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Postavljanje štanda</td>
+                  <td>Uređivanje štanda</td>
+                </tr>
+                <tr>
+                  <td>Dolazak na vrijeme</td>
+                  <td>Kašnjenje</td>
+                </tr>
+                <tr>
+                  <td>Postavljanje hrane</td>
+                  <td>Pravljenje hrane</td>
+                </tr>
+                <tr>
+                  <td>Nerviranje druge strane</td>
+                  <td>Nerviranje drue strane</td>
+                </tr>
+                <tr>
+                  <td>Nasmijavanje ljudi</td>
+                  <td>Ozbiljna komunikacija</td>
+                </tr>
+                <tr>
+                  <td>Raspremanje</td>
+                  <td>Odlazak prije vremena</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </article>
+    <hr class="linija" />
+    <!--Article komponente-->
+    <article class="cjelina">
+      <div class="row">
+        <div class="col-12">
+          <h1 class="Naslov">Projekat_3: Decembarski dani kulture</h1>
+          <p>
+            Još jedna od projekata iz srednje škole. Moram priznati da ovaj
+            projekat spominjem samo zato što je poprilično popularno bilo među
+            nama srednjoškolcima. Meni je ovo jedna od nepravednijih projekata
+            ove škole o čemu sam pričao i profesorima i razrednicima i
+            direktorici, nema kome nisam. Koncept je takav da svako odjeljenje
+            ima 7 minuta da održi neku mini predstavu te tako predstavi svoj
+            razred. Divna ideja. Svaki se razred najavi na poseban način, u
+            skladu sa opisom predstave. Na kraju priredbi svira školski bend.
+            Kada su duže pauze pleše plesna sekcija, recituju se stihovi
+            literarne sekcije. Bude mnogo članova porodice u publici, ljudi
+            kojima je to interesantno pa dođu da vide šta se dešava. Pobjednik
+            se određuje za svaki razred posebno, te samo pobjednik dobija taj
+            slobodni dan, dan kada niti jedan učenik tog razreda ne mora doći na
+            nastavu. Međutim, postoje stvari koje su malo dublje i uopće nisu
+            pravedne. Naime, postoje neke kao granice koje za neka odjeljenja
+            važi, a za neka ne važi. Na primjer vremensko ograničenje od 7
+            minuta. Nekim odjeljenjima je eliminatorno bilo što su nastupali 7
+            minuta i 10 sekundi, bez obzira koliko im dobra predstava sa jakom
+            porukom bila, a nekima se tolerisalo i 9 minuta. Međutim, pobjeda
+            nije ni neki pretjerano velik cilj meni bio, već druženje,
+            pravljenje predstave zajedno. Ja sam čak i često predlagao da
+            napravimo šta god i kako god se nama radi, pa koliko god da traje,
+            čisto da se družimo i da nam bude fino, međutim, odjeljenju je
+            uvijek pobjeda bitnija zbog slobodnog dana pa sam spomenuo i ovo.
+            Stvari koje su meni smetale je nekorektnost ostatka odjeljenja prema
+            osobama koje se trude da nešto osmisle, daju ideje. Ja nikada nisam
+            bio neki tip za glumu bilo kakvu, međutim, poštovao sam učenike koji
+            su se trudili oko toga dovoljno da im ne odmažem. Da uradim kako su
+            zamislili, da ih ne nerviram. Nažalost, malo ljudi je to radilo, te
+            sam ja primjetio da ti decembarski dani kulture uopće nisu neko
+            pozitivno dešavanje u razredu. Bore se čija je ideja bolja, ko je
+            bolji lik, ko je glavna uloga. Nebitne stvari. Svejedno, smatram da
+            je ovo, ako ništa, dobra prilika da se osoba oslobodi treme govora
+            pred velikim auditorijumom. Da biste razumili kako neka od predstava
+            izgelda u nastavku možete naći i video sa ovog događaja.
+          </p>
+          <video width="100%" controls>
+            <source
+              src="../Projekti/slikeprojekti/III - 3 Za remizu.mp4"
+              type="video/mp4"
+            />
+          </video>
+        </div>
+      </div>
+    </article>
+    <!--Article komponente-->
+    <article class="cjelina">
+      <div class="row">
+        <div class="col-lg-6">
+          <h1 class="Naslov">Projekat_4: Penjačka sala</h1>
+          <p>
+            Projekat pravljenja penjačke sale u mojoj srednjoj školi je nastao
+            poprilično spontano i slučajno. Naime, ja sam se još krajem drugog
+            početkom trećeg razreda družio sa ljudima iz Sarajevske škole
+            alpinizma, penjanja u sali na Grbavici, na Skenderiji, i tome
+            slično. SŠA svake godine organizuje osnovni ljetni, napredni ljetni
+            i zimski kurs alpinizma. Saznao sam preko tih prijatelja da je moja
+            nastavnica tjelesnog odgoja na osnovnom ljetnom kursu. Tada sam sa
+            njom pričao o penjanju kao sportu, šta je dobro, šta kul, šta
+            strašno, i tome slično. Međutim spomenuo sam joj kako je sala na
+            Grbavici u očajnom stanju, a ona na Skenderiji preskupa, te da bi
+            bilo dobro naći neku salu koja je uredu i sa jednog i sa drugog
+            aspekta. Nekoliko sedmica kasnije, nastavnica mi je rekla kako
+            dogovara otvaranje penjačkog zida u našoj sali za sport. Projekat je
+            bio finansiran od strane ministarstva sporta, međutim, dogovor je
+            bio da služi za SŠA. Nastavnica je onda stvarno jako brzo bez ičije
+            pomoći da ja znam otvorila odličan osnovni nivo zida. Međutim, kako
+            sam vidio da ima elana u sebi, napravio sam plan za proširenje zida
+            koji sada izgleda tako. Naime, dodao sam prevjese, hvatove koji se
+            razlikuju po bojama, gdje svaka boja označava drugi smjer te je
+            ideja penjati se po samo jednoj boji hvatova. Također, obzirom da se
+            zimi, ko smije, penje u lednjacima, dodali smo i dio za vježbu snage
+            za penjanje sa bajlama. To je neki vid male krampe koja se zabija u
+            led, dok su na nogama dereze, što su doslovno dodatak na gojzerice
+            koje imaju šiljke po sebi kako bi omogućile penjanje u ledu. Iako
+            ledničko penjanje nisam probao, niti namjeravam, taj dio se pokazao
+            jako dobrim i produktivnim obzirom da se od njegovog dodavanja,
+            barem što ja znam, išlo u Austriju i Italiju zadnje 2 godine da se
+            penje u ledu. Prevjese sam predlozio da se trebaju uraditi jer to
+            radi na otežavanju držanja balansa tijela, a dosta stijena koje se
+            penju su nagnute malo pa nije na odmet vježbati i takve situacije.
+            Nastavnica, direktorica, i SŠA je ovu ideju odobrila i podržala te
+            se tako napravio potpuni penjački zid u jednoj običnoj srednjoj
+            školi. Nakon ovog projekta, sa gorskom službom sam odlučio uraditi
+            uređenje sale na Grbavici koja je, koliko znam idalje u lošem
+            stanju. Mi smo kupili sve potrebne stvari, međutim sedmicu dana
+            prije početka radova su nam rekli da je došlo do nekih izmjena te da
+            ne mogu to uraditi tek tako, šta god to značilo. Da ne bismo gubili
+            motivaciju i materijal, u našim prostorijama na Breki smo uradili
+            potpunu penjačku salu na svim zidovima sa strunjačama ispod te gore
+            često vježbamo i ponavljamo osnove. Bitno je spomenuti da je ovo sve popularniji sport, pa tako pored mnogo sala u sarajevo imamo i sale u: <ul>
+              <li>Živinicama</li>
+              <li>Mostaru</li>
+              <li>Kladnju</li>
+              <li>Zenici</li>
+              <li>Bihaću</li>
+              <li>Brčkom</li>
+              <li>I još mnogo drugih...</li>
+            </ul>
+          </p>
+        </div>
+        <div class="col-lg-6">
+          <img src="../Projekti/slikeprojekti/sala.png" alt="Penjačka sala" />
+        </div>
+      </div>
+    </article>
+    <hr class="linija">
+    <!--futer sa svim dijelovima potrebnim-->
+    <footer class="footer">
+      <div class="row">
+        <div class="col-12 col-sm-3">
+          <a href="#top" class="lin">Povratak na početak stranice</a>
+        </div>
+        <div class="col-12 col-sm-3">
+          <a
+            href="https://www.instagram.com/emir.softic01/"
+            target="_blank"
+            class="lin"
+            >Instagram</a
+          >
+        </div>
+        <div class="col-12 col-sm-3">
+          <a
+            href="https://www.facebook.com/softa.01"
+            target="_blank"
+            class="lin"
+            >Facebook</a
+          >
+        </div>
+
+        <div class="col-12 col-sm-3">
+          <p>Datum izrade:25.10.2022. &#169;</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

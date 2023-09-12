@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style1.css" />
+    <title>PortfolioES</title>
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <!--ikonica u tabu-->
+    <link rel="icon" href="./slike1/browserimg - Copy.png" />
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!--Dio kopiran sa https://www.w3schools.com/bootstrap4/bootstrap_get_started.asp -->
+
+    <!--Dio prekopiran sa https://www.w3schools.com/bootstrap/bootstrap_ref_comp_glyphs.asp?fbclid=IwAR2zUl0ClkGX0PPUV_ib9TyOIHfWFUBJmaNPndn3HTmfb4ZoZGIRohevljQ :: Sluzi mi da ubacim search qlyph-->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"
+    />
+  </head>
+
+  <body>
+    <!--Navigacijski meni -->
+    <!--header komponenta-->
+    <header class="header">
+      <div class="row">
+        <div class="col-lg-2 d-none d-lg-block" id="slika_koja_nestanje">
+          <!--Moja slika sa transparentnom pozadinom-->
+          <a href="#top"
+            ><img
+              src="./slike1/header_slika.jpg"
+              alt="Mala_slika"
+              width="15%"
+              style="padding-bottom: 10px"
+          /></a>
+        </div>
+        <!--linkovi za razlicite dijelove stranice-->
+        <div class="col-lg-2 col-md-3 col-sm-6 nb">
+          <a href="../MainStranica/index.html" class="lin">Početna</a>
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-6 nb">
+          <a href="../BlogStranica/blog.html" class="lin">Blog</a>
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-6 nb">
+          <a href="../Galerija1/galerija1.html" class="lin">Galerija1</a>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-6 nb">
+          <a href="../Galerija2/Galerija2.html" class="lin">Galerija2</a>
+        </div>
+        <!--glyphicon-->
+        <!--Search polje koje nije funkcionalno-->
+        <div class="col-lg-2 d-none d-lg-block">
+          <button type="button" class="btn btn-default">
+            <span class="glyphicon glyphicon-search"></span> Search
+          </button>
+        </div>
+      </div>
+    </header>
+    <!--Article komponente-->
+
+    <article class="projekti">
+      <div class="row">
+        <div class="col-lg-6 col-md-12 col-sm-12">
+          <h1 class="Naslov">O meni</h1>
+          <!-- Oblast gdje
+ću ukratko napisati nešto o interesima, postaviti sliku drugaciju nego u headeru, osnovne podatke, kako se i trazi-->
+          <p>
+            Moje ime je Emir Softić i student sam Prirodno-matematičkog
+            fakulteta na trećoj godini prvog ciklusa studija, smijer Teorijska
+            kompjuterska nauka. Upisao sam ovaj smijer iz razloga što me je i u
+            srednjoj školi najviše zanimala matematika i informatika. To znanje
+            sam želio nadopuniti, te sam upisao baš ovaj fakultet. Smatrao sam
+            da mi ovaj smijer može pružiti najviše korisnog znanja i iz jedne i
+            iz druge oblasti te da bih nakon završetka prvog ciklusa, ukoliko ne
+            bih upisao drugi, mogao tržištu ponuditi više nego sa drugim
+            fakultetima ili smjerovima. Završio sam treću gimnaziju Sarajevo sa
+            odličnim uspjehom. U školi sam uvijek radio tačno koliko mi je bilo
+            dovoljno da imam prosjek koji je zadovoljavao roditelje. Ništa više
+            ni manje. Nekada se je doduše omakla neka visoka ocjena. Međutim, na
+            fakultetu sam većinom promijenio svoj stav prema obaveza što se tiče
+            učenja, i do sada se je to pokazalo kao bolji sistem, međutim ostaje
+            još jedna godina da se to dokaže. Slobodno vrijeme volim provoditi
+            uz društvo na planinama, pubovima, ili u nekoj opuštenoj kućnoj
+            varijanti.
+          </p>
+          <p>Osnovni podaci:</p>
+          <ul>
+            <li>Datum rodjenja: 11.10.1001.</li>
+            <li>Broj telefona: 000111222</li>
+            <li>
+              E-mail:
+              <a href="mailto:e.softic2001@gmail.com">e.softic2001@gmail.com</a>
+            </li>
+            <li>Adresa stanovanja: Ulica dobrih ljudi 3</li>
+          </ul>
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12">
+          <img
+            src="slike1/raja.jpg"
+            alt="Slika mene i moje ekipe GSS-a"
+            width="90%"
+          />
+        </div>
+      </div>
+    </article>
+    <hr class="linija" />
+
+    <!--main komponente-->
+
+    <main class="projekti" style="padding-top: 6px">
+      <!--Oblast stranice o obrazovanju i skillovima-->
+      <h1 class="Naslov">Moje vještine</h1>
+      <p>
+        Dio stranice u kome ću se osvrnuti na svoje obrazovanje kao i vještinama
+        koje nemaju neke veze konkretno sa formalnim obrazovanjem ali koje su mi
+        poslužile kao jako dobre i korisne u svakodnevnom životu. Što se tiče
+        formalnog obrazovanja sve je navedeno hronološkim redom u tabeli. Nisam
+        znao da li se kao formalno obrazovanje podrazumjevaju kursevi stranih
+        jezika pa ću ih napisati ovdije, iako se i to može smatrati kao neki vid
+        vještine. Međutim, malo je reć da nisam vješt sa jezicima... Na kurs iz
+        engleskog i njemačkog jezika sam išao jer su me roditelji nagovarali na
+        to. Engleski jezik govorim dobro, ali to nije znanje sa kurseva, dok
+        njemački jedva da govorim išta.
+      </p>
+
+      <div class="tabele">
+        <div class="row">
+          <div class="col-lg-6 col-sm-12 tabela1">
+            <h4>Formalno obrazovanje</h4>
+            <div class="table-responsive">
+              <table class="table">
+                <!--Tabela formalnog obrazovanja hronoloski-->
+                <thead>
+                  <tr>
+                    <th scope="col">Naziv ustanove</th>
+                    <th scope="col">Početak školovanja</th>
+                    <th scope="col">Kraj školovanja</th>
+                    <th scope="col">Stepen stečenog zvanja</th>
+                    <th scope="col">Grad</th>
+                    <th scope="col">Adresa</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Vrtić rosica</td>
+                    <td>2005</td>
+                    <td>2007</td>
+                    <td>Dijete</td>
+                    <td>Sarajevo</td>
+                    <td>Neka na malti nemam pojma</td>
+                  </tr>
+                  <tr>
+                    <td>Skender Kulenović</td>
+                    <td>2007</td>
+                    <td>2016</td>
+                    <td>Osnovnoškolac</td>
+                    <td>Sarajevo</td>
+                    <td>Trg sarajevske olimpijade 5</td>
+                  </tr>
+                  <tr>
+                    <td>Treća gimnazija</td>
+                    <td>2016</td>
+                    <td>2020</td>
+                    <td>Srednjoškolac</td>
+                    <td>Sarajevo</td>
+                    <td>Vilsonovo šetalište</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="col-lg-6 col-sm-12 tabela2">
+            <h4>Neformalno obrazovanje</h4>
+            <!--Dio za neformalno obrazovanje sa hiperlinkovima-->
+            <div class="table-responsive">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Aktivnost</th>
+                    <th scope="col">Početak</th>
+                    <th scope="col">Uspjesi</th>
+                    <th scope="col">Motivacija</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Plivanje</td>
+                    <td>2015</td>
+                    <td>Spasilac</td>
+                    <!--unutrasni linkovi-->
+                    <td><a href="#plivanje">kliknite za više</a></td>
+                  </tr>
+                  <tr>
+                    <td>PSK "Prijatelj prirode"</td>
+                    <td>2015</td>
+                    <td>Aktivni član</td>
+                    <!--unutrasni linkovi-->
+                    <td><a href="#planinarenje">kliknite za više</a></td>
+                  </tr>
+                  <tr>
+                    <td>Gorska služba spašavanja</td>
+                    <td>2018</td>
+                    <td>Pripravnik za spasioca</td>
+                    <!--unutrasni linkovi-->
+                    <td><a href="#GSS">kliknite za više</a></td>
+                  </tr>
+                  <tr>
+                    <td>Ronjenje</td>
+                    <td>2020</td>
+                    <td>P1, P2</td>
+                    <!--unutrasni linkovi-->
+                    <td><a href="#RK">kliknite za više</a></td>
+                  </tr>
+                  <tr>
+                    <td>Sarajevska škola alpinizma</td>
+                    <td>2019</td>
+                    <!--unutrasni linkovi-->
+                    <td>Alpinista pripravnik</td>
+                    <td><a href="#SSA">kliknite za više</a></td>
+                  </tr>
+                  <tr>
+                    <td>Trčanje</td>
+                    <td>2022</td>
+                    <td>/</td>
+                    <!--unutrasni linkovi-->
+                    <td><a href="#tr">kliknite za više</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p style="padding-top: 20px">
+        Trenutno sam, kao što se u tabeli i vidi, student Prirodno-matematičkog
+        fakulteta, odsjeka za matematiku i kompjuterske nauke. Smjer se zove
+        kompjuterske nauke i koncipiran je tako da se prođu osnovna znanja iz
+        više matematike, uporedo uz osnove programiranja, a nakon takvih studija
+        prelazi se na složenije programiranje. Fakultet također nudi i odličan
+        drugi i treći ciklus studija kompjuterskih nauka. Uz svo vrijeme koje
+        sam učio i prije kao srednjoškolac, a i sada kao student, uvijek sam
+        nekako pronalazio vrijeme za vannastavne aktivnosti. Oduvijek sam bio
+        dijete koje je volilo "visiti" napolju i družiti se sa ljudima. Međutim,
+        kako se osnovna škola približavala kraju, a narigile postale mjesto
+        okupljanja tadašnjih vršnjaka, odlučio sam društvo i zanimacije tražiti
+        na drugim lokacijama. Tako je i počelo moje sticanje znanja koje nisu
+        striktno vezane za struku ali su poprilicno korisna kada treba nekom
+        pomoći, ili samo uživati u miru i ljepoti prirode.<br />
+        <!--unutrasni linkovi-->
+        <span id="plivanje"> <em>Plivanje</em></span> je bilo prvi sport kojim
+        sam se odlučio malo ozbiljnije baviti. Dugo sam vremena lutao, probavao
+        razne borilačke sportove, timske, pojedinačne, međutim, shvatio sam da
+        mi za zdravlje leđa najbolje odgovara plivanje. Na početku sam dolazio
+        sam na bazen jer sam smatrao nepotrebnim troškom plaćati članarinu nekom
+        klubu, ako nemam osnovnu kondiciju i sposobnost plivanja malo većih
+        dužina. Kada sam stekao dovoljno kondicije, postao sam član plivačkog
+        kluba te u njemu ostao do kraja srednje škole. Treninzi su često bili
+        odmah prije ili odmah nakon školskih časova te je uvijek bio problem
+        doći na trening na vrijeme, ali snalazio sam se... Nakon niza godina
+        provedenih na bazenu, što sa plivačkim tako kasnije i sa ronilačkim
+        klubom, dobio sam priliku, te sam i postao spasilac na bazenu. Diploma,
+        ili zvanje, samo po sebi nije ništa specijalno, ali smatram da je jako
+        bitno imati i neku vrstu dodatnog obrazovanja, koje možda nije tipično u
+        današnjem svijetu, međutim, bitno je pronaći sebe u što više raznovrsnih
+        aktivnosti. <br />
+        <!--unutrasni linkovi-->
+        <span id="planinarenje">Pored</span> plivanja, odlučio sam se
+        priključiti u <em>planinarsko društvo</em> u kojem je moj najbolji
+        prijatelj član od malih nogu, međutim, mene do kraja osnovne nije toliko
+        privlacila sama pomisao obilaska planinskih vrhova u Bosni i Hercegovini
+        i regionu. Spletom okolnosti, otišao sam na par pohoda koje je društvo
+        organizovalo, prisutan sam bio i u raznim akcijama pošumljavanja,
+        pomagao organizovati neke ture, pri organizaciji škole planinarstva. U
+        međuvremenu smo mnogo staza čije su markacije ostarile i postale
+        zapuštene remarkirali. Društvo je također i napravilo svoju transverzalu
+        "Srebrena lija" koja se obilazi 3 u septembru. Bio sam poprilično
+        aktivan sve do pred kraj srednje škole, a onda sam, budući da sam bio
+        često na planini bio predložen od strane kluba da postanem član gorske
+        službe spašavanja stanice Sarajevo, obzirom da je tada bila takva
+        procedura. <br />
+        <!--unutrasni linkovi-->
+        <span id="GSS"> <em>Gorska služba spašavanja</em></span> mi je zaista
+        jedna od boljih promjena u životu i korak koji bih svakako ponovo
+        izabrao kada bih mogao. To je volonterska organizacija građana koji
+        svoje slobodno vrijeme daju za obuke u oblasti spašavanja sa svih vrsta
+        nepristupačnih terena kako bi u slučaju potrebe spašavanja nekog
+        sugrađana znali adekvatno reagovati. Primjer kojeg se svi sjećaju su
+        poplave 2021. godine. Kolege iz stanice i ja smo tada žrtvovali slobodni
+        dan, ili izgubili dan na fakultetu kako bismo pomogli ljudima koja je te
+        pomoć bila tada neophodna. Naravno, uz to, tu su akcije spasavanja sa
+        planine, koje su jako česte obzirom da ljudi nisu svjesni opasnosti
+        planine, izvlačenje tijela iz jama, izvlačenje utopljenika, osiguravanje
+        Marša mira i drugih pohoda u kojim učestvuje mnogo ljudi i još mnogo
+        toga... U stanici sam od svoje sedamnaeste godine, te sam za ovo vrijeme
+        prošao mnogo obuka. Trenutno se vodim kao pripravnik za registrovanog
+        spasioca, te mi je do nivoa spasioca ostao jos jedan zimski kurs koji
+        nikako ne mogu da uskladim sa fakultetskim obavezama, međutim, nije da
+        mi se nešto žuri. Obzirom na moju plivačku historiju, nije trebalo dugo
+        da mi se ponudi mjesto u plivačkom timu stanice, a ubrzo nakon toga i
+        kurs ronjenja. <br />
+        <!--unutrasni linkovi-->
+        <span id="RK"> <em>Ronjenje</em></span> je onda postala velika ljubav.
+        Istraživati i gledati šta se sve krije na dnu mora, podvodni reljef,
+        stijene, i šta sve ne. Stanica GSS Sarajevo ima suradnju sa ronilačkim
+        klubom Bosna. Klub koji radi po trenutno najstrožijim licencama za
+        ronjenje, CMAS. Generalno, ovo je jako rizičan sport ukoliko se strogo
+        ne poštuje nekoliko pravila. Pritisak prilikom zaranjanja se jako
+        mijenja, što u slučaju pogrešnog poteza u pogrešno vrijeme može dovesti
+        do smrti osobe. Zbog toga postoje podjele na nivoe ronioca. P1 je
+        osnovna kategorija i sa njom se ima pravo zaroniti do 20m dubine. P2 je
+        sljedeći stepen ronjenja, te zahtjeva minimalno 20 zarona sa P1 nivoom
+        kako bi se uopće moglo prijaviti na kurs za takozvanu "drugu zvijezdu".
+        Onda kreću zaroni u dubinu. Naime, sa P2 licencom može se zaroniti do 60
+        metara, što je ujedno i najviše što je dozvoljeno(sa običnim zrakom).
+        Međutim, ubrzo bih trebao krenuti na kurs tehničkog ronjenja gdje se
+        roni sa različitim gasnim mješavinama koji se dišu umjesto običnog zraka
+        kako bi se moglo ostati duže na velikim dubinama, ili zaroniti dublje
+        nego što bi se moglo roniti sa običnim zrakom. Naime, na 66 metara
+        dubine svaki naredni udah običnog zraka može uzrokovati trovanjem
+        kisikom obzirom na povećanje parcijalnih pritisaka svih gasova. Također,
+        ovaj klub organizuje eko akcije, gdje čistimo rijeke i jezera širom BiH,
+        ronjenja u Hrvatskoj i Egiptu svake godine te kurseve prve pomoći koje
+        su namjenjene striktno za način reagovanja prilikom ronjenja. <br />
+        <span id="SSA"> <em>Alpinizam</em></span> kao hobi mi i nije nešto što
+        me trenutno toliko interesuje. Nemam zaista vremena da se i tu posvetim,
+        obzirom na druge prioritete u zivotu, međutim odradio sam par kurseva i
+        Sarajevskoj školi alpinizma koju vode jedni od prvih alpinista Bosne i
+        Hercegovine pa i u samom regionu. Ovo je jako velika zajednica ljudi
+        koji se zaista trude prenijeti svo znanje koje imaju na učesnike kursa,
+        ali velika prepreka za mene su bili roditelji koji se mnogo sekiraju
+        kada vide slike na kojima visimo sa jednog užeta, penjemo visoke stijene
+        i tome slično te sam im odlučio smanjiti barem jedan vid sekiracije te
+        je ovo hobi koji sam trenutno malo zapostavio, ali svakako znam da sam
+        uvijek dobrodošao nazad u zajednicu alpinista kada nađem vremena, a
+        preporučujem svima koje zanima penjanje, aplinizam, penjanje u ledu čak,
+        da se raspitaju i prijave na početni ljetni kurs SŠA. <br />
+        <!--unutrasni linkovi-->
+        <span id="tr">Posljednja</span> aktivnost koja mi je nedavno privukla
+        pažnju jeste <em>trčanje</em>. Jako jednostavna disciplina. Rekao bih ja
+        nekad na početku 2022 kada mi je ovaj sport privukao pažnju. Samo se
+        trči, dosadno. Međutim, kada sam malo više pogledao o načinima
+        treniranja, rada, testiranja nekakvih limita koje tijelo može izdržati
+        shvatio sam da je to zaista sport koji svako može raditi za sebe da bi
+        radio na sebi. Glavni benefit ovog sporta za mene jeste činjenica da mi
+        nevjerovatno olakšava ustajanje ujutro. Obično volim odraditi trčanje
+        što ranije mogu kako bih mogao nastaviti dan, a to prouzrokuje činjenicu
+        da od kada trčim od 11 sati ujutro sam spreman za rad, a prije bih tek
+        oko 11 ustao. Stvarno postoji neka čar sporta ako je neko želi pronaći u
+        sebi, bez pritiska da nešto mora uraditi, već izlazi na trčanje jer to
+        želi. <br />
+        <!--unutrasni linkovi-->
+        <span id="formalno"><em>Formalno obrazovanje</em></span> je
+        predstavljeno u tabeli također. O tome nemam nešto posebno reć. Nisam
+        nikada bio neki super učenik što se tiče prosjeka. Nisam nikada bio
+        takmičar iz nekih predmeta. Poprilično mi je žao što kao mlađi nisam
+        ulagao više vremena u više rada matematike, učenje stranih jezika, ali
+        sada je kasno za žaliti se. Pokušavam dodatnim radom na fakultetu nekako
+        stići sve što sam u osnovnoj i srednjoj školi propustio ili što nisam
+        iskoristio maksimalno koliko je moguće. Nadam se da mi ide.
+      </p>
+    </main>
+    <hr class="linija" />
+    <!--Main komponente-->
+
+    <main>
+      <!--Article komponente-->
+
+      <article class="projekti">
+        <div class="row">
+          <div class="col-sm-6">
+            <!--dio stranice posvecen mom maturskom-->
+            <h1 class="Naslov">Maturski rad</h1>
+            <p>
+              U srednjoj školi sam bio dosta neodlučan i nisam znao sta me
+              interesuje, čime bih se volio baviti i tome slično. Obzirom da smo
+              morali odabrati predmete i teme za maturski rad prije prvog
+              polugodišta, to sam uradio prema mentorima/nastavnicima, a ne
+              prema predmetima. Izabrao sam rad iz predmeta fizika na temu
+              fizika oka. Razlog je, kao što sam rekao, je tadašnja nastavnica
+              fizike sa kojom sam i dalje u kontaktu i koja mi je predložila da
+              upišem ovaj fakultet i smjer.
+            </p>
+            <img
+              class="slika_projekat"
+              src="slike1/slika_oko.png"
+              alt="slika vezana za maturski"
+              width="100%"
+              ;
+            />
+            <aside>
+              <p>
+                Obzirom da nosim naočale od svoje treće godine, bilo je
+                zanimljivo upustiti se u način rada oka, struktura dijelova i
+                kako razna pomagala utiču i poboljšavaju vid, tako pomažuci
+                mnogima. Prije sam se površno bavio istraživanjem ove teme, a
+                sada sam imao priliku detaljno se posvetiti tome. Rad je bio
+                koncipiran tako da se krene od generalnih podataka o
+                oftamologiji, a zatim, kombinovanjem stečenog znanja iz raznih
+                oblasti rad ulazi u mnogo kompleksnije dijelove same nauke.Sve u
+                svemu, bez obzira što mi ovaj rad nije pomogao u daljnjem
+                obrazovanju, bilo mi je jako lijepo raditi na njemu i saznati
+                neke nove, ali vjerovatno za daljnji život bespotrebne stvati.
+                Međutim, da imam priliku ponovo birati vjerovatno bih uzeo neku
+                temu iz kompjuterskih nauka.
+              </p>
+              <br />
+              <p>Podaci o mentoru i srednjoj školi:</p>
+              <ul class="podaci">
+                <li>Nastavnica: Alisa Ramić</li>
+                <li>Lokacija škole: Sarajevo</li>
+                <li>
+                  <div class="link">
+                    <!--vanjski link-->
+                    <a href="https://treca-gimnazija.edu.ba/" target="_blank"
+                      >Stranica škole</a
+                    >
+                  </div>
+                </li>
+              </ul>
+            </aside>
+          </div>
+
+          <div class="col-sm-6">
+            <!--dio stranice o mom projektu na fakultetu-->
+            <h1 class="Naslov">Projekat</h1>
+            <p>
+              Ovo je bio projekat na meni jako zanimljivom predmetu koji se zove
+              "Strukture podataka i algoritmi". Potrebno je bilo napraviti
+              strukturu podataka koja na neki način predstavlja dvostruki heap,
+              u smislu da je moguće brisanje i najmanjeg i najvećeg elementa u
+              vremenu O(log n). Taj heap se je trebao implementirati preko niza,
+              a glavna osobina ovog heapa je ta da za svaki element vrijedi da
+              ako je na parnoj dubini onda ja manji od svog roditelja a veći od
+              roditelja svog roditelja, dok za elemente na neparnoj dubini
+              vrijedi da su veći od svojih roditelja, a manji od roditelja
+              svojih roditelja.
+            </p>
+            <img
+              class="slika_projekat"
+              src="slike1/slika_h_fajla_projekat.png"
+              alt="slika projekta"
+              width="100%"
+              ;
+            />
+            <aside>
+              <p>
+                Ovdje možete vidjeti koje su funkcije implementirane u samom
+                projektu. Projekat je nosio najmanje bodova od svih ponuđenih.
+                Izabrao sam ga jer sam vidio da se može uraditi za manje od
+                jednog dana, a nosio je dovoljno bodova da ostvarim sebi prolaz.
+              </p>
+              <p>
+                Ukoliko Vas zanima više mojih projekata možete ih pogledati na
+                ovom linku:
+                <!--link za projekte-->
+                <a href="../Projekti/projekti.html">Projekti</a>
+              </p>
+              <p>Podaci o mentoru i fakultetu:</p>
+              <ul class="podaci">
+                <li>Mentor: Admir Beširević</li>
+                <li>Lokacija fakulteta: Sarajevo</li>
+                <li>
+                  <div class="link">
+                    <!--vanjski link-->
+                    <a href="https://pmf.unsa.ba/" target="_blank"
+                      >Stranica fakulteta</a
+                    >
+                  </div>
+                </li>
+              </ul>
+            </aside>
+          </div>
+        </div>
+      </article>
+    </main>
+    <!--futer sa svim dijelovima koje trebaju-->
+    <hr class="linija" />
+    <footer class="footer">
+      <div class="row">
+        <div class="col-12 col-sm-3">
+          <!--unutrasni linkovi-->
+          <a href="#top" class="lin">Povratak na početak stranice</a>
+        </div>
+        <div class="col-12 col-sm-3">
+          <a
+            href="https://www.instagram.com/emir.softic01/"
+            target="_blank"
+            class="lin"
+            >Instagram</a
+          >
+        </div>
+        <div class="col-12 col-sm-3">
+          <a
+            href="https://www.facebook.com/softa.01"
+            target="_blank"
+            class="lin"
+            >Facebook</a
+          >
+        </div>
+
+        <div class="col-12 col-sm-3">
+          <p>Datum izrade:25.10.2022. &#169;</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

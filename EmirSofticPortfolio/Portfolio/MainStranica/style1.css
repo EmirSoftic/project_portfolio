@@ -1,0 +1,136 @@
+* {
+    font-family: "Comic Sans", cursive;
+}
+/* Navigacijski dio, djelimicno kopiran sa https://www.w3schools.com/howto/howto_css_fixed_menu.asp, 
+ali ne sve. Dijelovi su izbaceni i modifikovani tako da mi odgovaraju stilu stranica. */
+/*pristup klasi*/
+.header{
+    background-color: #78ccd7;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding-top: 15px;
+    /*position: fixed;*/
+}
+
+.header a:hover{
+    text-decoration: none;
+    background-color:white;
+    color: black;
+    padding: 0.7%;
+    border-radius: 5px;
+}
+#slika_koja_nestanje:hover{
+    opacity: 0.3;
+}
+.nb{
+    margin-top: 7px;
+    padding-bottom: 20px;
+}
+.slika_projekat{
+    float:left;
+    padding-bottom: 10px;
+}
+.podaci{
+    list-style-type: none;
+}
+.mojaPrica{
+    text-align: justify;
+    margin-top: 10px;
+    margin-left: 80px;
+    margin-right: 120px;
+}
+.projekti{
+    margin: 20px;
+    text-align: left;
+}
+.lin{
+    color: #2c707a;
+}
+.footer{
+    display: block;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #78ccd7;
+    padding-top: 15px;
+}
+.footer a:hover {
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    padding: 0.7%;
+    border-radius: 5px;
+}
+/*visited elektori*/
+.footer a:visited{
+    color: #F2F1EF;
+}
+ul{
+    list-style-type:square;
+}
+
+.linija{
+    height: 1px;
+    background-color: #000;
+}
+.projekti{
+    border-radius: 15px;
+    padding: 20px;
+    background-color: #78ccd7;
+}
+.Naslov{
+    text-align: center;
+    background-color: rgba(98,169,179,0.1);
+    font-weight: bold;
+}
+
+/*ideja uzeta sa : https: //techstacker.com/how-to-make-elements-zoom-on-hover-with-css/
+radi povecanja linka prilikom hovera da ucinim tekst zanimljivijim*/
+/*Pristup tagu unutar taga*/
+.projekti a {
+    color: #fee9d9;
+    text-decoration: none;
+}
+
+.link{
+    transition: transform .0s;
+}
+.link:hover{
+    transform: scale(1.01);
+}
+.link a:hover{
+    color: black;
+    text-decoration: none;
+    padding: 0.3px;
+    background-color: white;
+    border-radius: 3px;
+}
+table, td, tr, th{
+    border: 2px solid red;
+    border-collapse: collapse;
+}
+.table{
+    margin: 20px;
+    border: 2px solid red;
+        border-collapse: collapse;
+}
+p{
+    margin: 20px;
+}
+em{
+    font-weight: bold;
+}
+body{
+    background-image: repeating-linear-gradient(135deg, #fbcbad 0, #fbcbad .75em,#fee9d9 0, #fee9d9 2em);
+}
+/*Active selektor*/
+tr a:active{
+    color: red;
+}
+/*Hover selektor*/
+tr a:hover{
+    text-decoration: none;
+}
+aside{
+    margin: 30px;
+}
