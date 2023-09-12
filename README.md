@@ -1,7 +1,1 @@
-"# public_projects" 
-"# project_portfolio" 
-"# project_portfolio" 
-"# project_portfolio" 
-"# project_portfolio" 
-"# project_portfolio" 
-"# project_portfolio" 
+This project was my first hands on project that was based on doing frontend part of programming. It is basic HTML5 and CSS project that only showcases all the knowledge I have optained in my university classes. The webpage is about me, my path to this day and my interests. I am very happy how my first web project came through.
